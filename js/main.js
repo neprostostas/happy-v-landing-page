@@ -24,8 +24,25 @@ document.addEventListener("DOMContentLoaded", (event) => {
         },
     });
 
+    /* ======== FAQ ACCORDION ======== */
+    const faqs = document.querySelectorAll(".faq");
 
+    faqs.forEach(faq => {
+        faq.addEventListener("click", function() {
+            const answer = this.querySelector(".faq-answer");
+            const plusIcon = this.querySelector(".icon-plus");
+            const minusIcon = this.querySelector(".icon-minus");
 
-
+            if (answer.style.display === "block") {
+                answer.style.display = "none";
+                plusIcon.style.display = "block";
+                minusIcon.style.display = "none";
+            } else {
+                answer.style.display = "block";
+                plusIcon.style.display = "none";
+                minusIcon.style.display = "block";
+            }
+        });
+    });
 
 });

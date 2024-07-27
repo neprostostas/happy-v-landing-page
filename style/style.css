@@ -390,7 +390,7 @@ button.button.xl {
     gap: 16px;
 }
 
-.card-product * {
+.card-product *, .faq-container * {
     -moz-user-select: none;
     -khtml-user-select: none;
     -webkit-user-select: none;
@@ -459,6 +459,104 @@ button.button.xl {
     padding-bottom: 140px;
 }
 
+.wrapper-inner.faq {
+    padding-bottom: 140px;
+}
+
+.faq-main-title {
+    padding-bottom: 52px;
+    text-align: center;
+    color: #25425D;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -0.6px;
+}
+
+.faq-container .faq {
+    cursor: pointer;
+    margin-bottom: 24px;
+    overflow: hidden;
+    padding: 42px;
+    border-radius: 24px;
+    background: #FBF8F7;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: #25425D;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -0.32px;
+}
+
+.faq-answer {
+    width: 100%;
+    max-width: 820px;
+    display: none;
+    padding-top: 32px;
+    color: #25425D;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: -0.44px;
+    animation: fadeIn 0.3s forwards;
+}
+
+.icon-plus, .icon-minus {
+    width: 24px;
+    height: 24px;
+}
+
+.icon-minus {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.wrapper-inner.partners-saying {
+    padding-bottom: 52px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.partners-saying-title {
+    color: #25425D;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -0.6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -492,6 +590,43 @@ button.button.xl {
 
 /* From 675px to 1919px */
 @media (min-width: 675px) and (max-width: 1919px) {
+
+    .partners-saying-title {
+        font-size: 42px;
+        letter-spacing: -0.42px;
+    }
+
+    .faq-question {
+        font-size: 24px;
+        letter-spacing: -0.24px;
+    }
+
+    .faq-container .faq {
+        margin-bottom: 20px;
+    }
+
+    .faq-answer {
+        padding-top: 24px;
+        font-size: 18px;
+        line-height: 150%;
+        letter-spacing: -0.36px;
+    }
+
+    .icon-plus, .icon-minus {
+        width: 20px;
+        height: 20px;
+    }
+
+    .faq-main-title {
+        padding-bottom: 32px;
+        font-size: 42px;
+        line-height: 120%;
+        letter-spacing: -0.42px;
+    }
+
+    .wrapper-inner.faq {
+        padding-bottom: 132px;
+    }
 
     .recommendation-desc {
         font-size: 18px;
@@ -585,6 +720,30 @@ button.button.xl {
 
 @media (min-width: 925px) and (max-width: 1200px) {
 
+    .partners-saying-title {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 120%;
+        letter-spacing: -0.24px;
+        width: 100%;
+        max-width: 176px;
+    }
+
+    .faq-answer {
+        max-width: calc(100% - 40px);
+        padding-top: 24px;
+        font-size: 18px;
+        line-height: 150%;
+        letter-spacing: -0.36px;
+    }
+
+    .faq-main-title {
+        padding-bottom: 20px;
+        font-size: 24px;
+        line-height: 120%;
+        letter-spacing: -0.24px;
+    }
+
     .recommendation-desc {
         font-size: 14px;
         line-height: 140%;
@@ -604,7 +763,6 @@ button.button.xl {
         font-size: 14px;
         padding: 6px 12px;
     }
-
 
     .card-product {
         height: 545px;
@@ -640,6 +798,30 @@ button.button.xl {
 }
 
 @media (min-width: 675px) and (max-width: 924px) {
+
+    .partners-saying-title {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 120%;
+        letter-spacing: -0.24px;
+        width: 100%;
+        max-width: 176px;
+    }
+
+    .faq-answer {
+        max-width: calc(100% - 40px);
+        padding-top: 24px;
+        font-size: 18px;
+        line-height: 150%;
+        letter-spacing: -0.36px;
+    }
+
+    .faq-main-title {
+        padding-bottom: 20px;
+        font-size: 24px;
+        line-height: 120%;
+        letter-spacing: -0.24px;
+    }
 
     .recommendation-desc {
         font-size: 14px;
@@ -724,6 +906,57 @@ button.button.xl {
 
 /* From 0 to 674px - MOBILE */
 @media (max-width: 674px) {
+
+    .partners-saying-title {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 120%;
+        letter-spacing: -0.24px;
+        width: 100%;
+        max-width: 176px;
+    }
+
+    .wrapper-inner.partners-saying {
+        padding-bottom: 20px;
+    }
+
+    .faq-question {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 130%;
+        letter-spacing: -0.28px;
+    }
+
+    .faq-container .faq {
+        padding: 20px;
+        margin-bottom: 12px;
+    }
+
+    .faq-answer {
+        max-width: calc(100% - 40px);
+        padding-top: 12px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+        letter-spacing: -0.28px;
+    }
+
+    .icon-plus, .icon-minus {
+        width: 16px;
+        height: 16px;
+    }
+
+    .faq-main-title {
+        padding-bottom: 20px;
+        font-size: 24px;
+        line-height: 120%;
+        letter-spacing: -0.24px;
+    }
+
+    .wrapper-inner.faq {
+        padding-bottom: 52px;
+    }
 
     .wrapper-inner.main {
         padding-bottom: 48px;
