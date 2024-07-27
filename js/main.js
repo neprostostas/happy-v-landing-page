@@ -19,7 +19,27 @@ document.addEventListener("DOMContentLoaded", (event) => {
                 slidesPerView: 2.3,
             },
             1920: {
-                slidesPerView: 2.73,
+                slidesPerView: 2.83,
+            },
+        },
+    });
+
+    /* ======== Swiper2 ======== */
+    var swiper2 = new Swiper(".mySwiper2", {
+        slidesPerView: 3.2,
+        spaceBetween: 30,
+        breakpoints: {
+            10: {
+                slidesPerView: 1.2,
+            },
+            674: {
+                slidesPerView: 1.2,
+            },
+            1200: {
+                slidesPerView: 1.63,
+            },
+            1920: {
+                slidesPerView: 2.3,
             },
         },
     });

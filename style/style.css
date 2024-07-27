@@ -546,15 +546,85 @@ button.button.xl {
     letter-spacing: -0.6px;
 }
 
+.wrapper-inner.swiper-person {
+    padding-bottom: 133px;
+}
 
+.card-person {
+    display: grid;
+    grid-template-columns: 41% 59%;
+    height: 441px;
+    border-radius: 24px;
+}
 
+.person-img {
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+}
 
+.card-person-text-block {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    border-radius: 0 24px 24px 0;
+    background: #FBF8F7;
+}
 
+.quote-sign {
+    width: 68px;
+    height: 53.4px;
+}
 
+.card-person-quote {
+    padding: 88px 0 61px;
+    width: 100%;
+    max-width: 300px;
 
+    color: #25425D;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -0.32px;
+}
 
+.card-person-name {
+    padding-bottom: 12px;
+    color: #25425D;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: -0.2px;
+}
 
+.card-person-role {
+    color: #25425D;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -0.16px;
+}
 
+.card-product-wrap .swiper-slide {
+    margin-right: 52px!important;
+}
+
+.card-person-wrap .swiper-slide {
+    margin-right: 32px!important;
+}
 
 
 
@@ -590,6 +660,14 @@ button.button.xl {
 
 /* From 675px to 1919px */
 @media (min-width: 675px) and (max-width: 1919px) {
+
+    .card-person {
+        height: 640px;
+    }
+
+    .card-product-wrap .swiper-slide {
+        margin-right: 32px!important;
+    }
 
     .partners-saying-title {
         font-size: 42px;
@@ -720,6 +798,40 @@ button.button.xl {
 
 @media (min-width: 925px) and (max-width: 1200px) {
 
+    .card-person {
+        height: 510px;
+    }
+
+    .card-person-role {
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+        letter-spacing: -0.12px;
+    }
+
+    .card-person-name {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 100%;
+        letter-spacing: -0.14px;
+    }
+
+    .quote-sign {
+        width: 34px;
+        height: 26px;
+    }
+
+    .card-person-quote {
+        padding: 28px 20px 28px;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+        letter-spacing: -0.2px;
+    }
+
     .partners-saying-title {
         font-size: 24px;
         font-weight: 600;
@@ -798,6 +910,40 @@ button.button.xl {
 }
 
 @media (min-width: 675px) and (max-width: 924px) {
+
+    .card-person {
+        height: 380px;
+    }
+
+    .card-person-role {
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+        letter-spacing: -0.12px;
+    }
+
+    .card-person-name {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 100%;
+        letter-spacing: -0.14px;
+    }
+
+    .quote-sign {
+        width: 34px;
+        height: 26px;
+    }
+
+    .card-person-quote {
+        padding: 28px 20px 28px;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+        letter-spacing: -0.2px;
+    }
 
     .partners-saying-title {
         font-size: 24px;
@@ -906,6 +1052,67 @@ button.button.xl {
 
 /* From 0 to 674px - MOBILE */
 @media (max-width: 674px) {
+
+    .card-person {
+        height: 340px;
+        grid-template-columns: auto;
+        border-radius: 20px;
+    }
+
+    .card-product-wrap .swiper-slide {
+        margin-right: 12px!important;
+    }
+
+    .card-person-wrap .swiper-slide {
+        margin-right: 12px!important;
+    }
+
+    .quote-sign {
+        width: 34px;
+        height: 26px;
+    }
+
+    .card-person-name {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 100%;
+        letter-spacing: -0.14px;
+    }
+
+    .card-person-role {
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+        letter-spacing: -0.12px;
+    }
+
+    .card-person-quote {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+        letter-spacing: -0.2px;
+    }
+
+    .card-person-quote {
+        padding: 20px 0 24px;
+    }
+
+    .person-img {
+        height: 150px;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .card-person-text-block {
+        padding: 20px;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .wrapper-inner.swiper-person {
+        padding-bottom: 52px;
+    }
 
     .partners-saying-title {
         font-size: 24px;
@@ -1173,6 +1380,19 @@ button.button.xl {
 
     .recommendation-text-part, .recommendation-text-part.wide {
         max-width: 220px;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .card-person {
+        height: 316px;
+    }
+
+    .card-person-quote {
+        padding: 15px 0 15px;
+        font-size: 16px;
     }
 
 }
