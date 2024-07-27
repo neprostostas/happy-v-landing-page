@@ -398,6 +398,75 @@ button.button.xl {
     user-select: none;
 }
 
+.recommendation-line {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+}
+
+.recommendation-line img {
+    border-radius: 24px;
+}
+
+.recommendation-text-part {
+    width: 100%;
+    max-width: 520px;
+}
+
+.recommendation-text-part.wide {
+    max-width: 625px;
+}
+
+.recommendation-title {
+    padding: 30px 0 40px;
+    color: #25425D;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -0.6px;
+}
+
+.recommendation-desc {
+    color: #25425D;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: -0.44px;
+}
+
+.highlight-cell {
+    display: inline-flex;
+    color: #25425D;
+    text-align: center;
+    font-size: 28.8px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 114.5%;
+    padding: 18px 22px;
+    border-radius: 17px;
+    border: 2px solid #6CB4DA;
+}
+
+.wrapper-inner.main {
+    padding-bottom: 140px;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -423,6 +492,24 @@ button.button.xl {
 
 /* From 675px to 1919px */
 @media (min-width: 675px) and (max-width: 1919px) {
+
+    .recommendation-desc {
+        font-size: 18px;
+        line-height: 150%;
+        letter-spacing: -0.36px;
+    }
+
+    .recommendation-title {
+        padding: 24px 0;
+        font-size: 42px;
+        letter-spacing: -0.42px;
+    }
+
+    .highlight-cell {
+        padding: 16px;
+        font-size: 18px;
+        line-height: 114.5%;
+    }
 
     .card-product-wrap {
         padding-bottom: 132px;
@@ -498,6 +585,27 @@ button.button.xl {
 
 @media (min-width: 925px) and (max-width: 1200px) {
 
+    .recommendation-desc {
+        font-size: 14px;
+        line-height: 140%;
+        letter-spacing: -0.28px;
+    }
+
+    .recommendation-title {
+        padding: 8px 0 16px;
+        font-size: 24px;
+        line-height: 120%;
+        letter-spacing: -0.24px;
+    }
+
+    .highlight-cell {
+        border-radius: 6px;
+        border: 1px solid #6CB4DA;
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+
     .card-product {
         height: 545px;
     }
@@ -532,6 +640,26 @@ button.button.xl {
 }
 
 @media (min-width: 675px) and (max-width: 924px) {
+
+    .recommendation-desc {
+        font-size: 14px;
+        line-height: 140%;
+        letter-spacing: -0.28px;
+    }
+
+    .recommendation-title {
+        padding: 8px 0 16px;
+        font-size: 24px;
+        line-height: 120%;
+        letter-spacing: -0.24px;
+    }
+
+    .highlight-cell {
+        border-radius: 6px;
+        border: 1px solid #6CB4DA;
+        font-size: 14px;
+        padding: 6px 12px;
+    }
 
     .swiper-button-next, .swiper-button-prev {
         display: none;
@@ -597,6 +725,58 @@ button.button.xl {
 /* From 0 to 674px - MOBILE */
 @media (max-width: 674px) {
 
+    .wrapper-inner.main {
+        padding-bottom: 48px;
+    }
+
+    .wrapper-inner.main {
+        display: grid;
+        gap: 52px;
+    }
+
+    .recommendation-text-part, .recommendation-text-part.wide {
+        max-width: 330px!important;
+    }
+
+    .recommendation-line {
+        grid-template-columns: auto;
+        gap: 24px;
+    }
+
+    .recommendation-line.span-reverse .recommendation-img {
+        grid-row-start: 2;
+    }
+
+    .recommendation-img {
+        width: 100%;
+        max-width: 343px;
+        height: 372px;
+    }
+
+    .recommendation-desc {
+        font-size: 14px;
+        line-height: 140%;
+        letter-spacing: -0.28px;
+    }
+
+    .recommendation-title {
+        padding: 8px 0 16px;
+        font-size: 24px;
+        line-height: 120%;
+        letter-spacing: -0.24px;
+    }
+
+    .highlight-cell {
+        border-radius: 6px;
+        border: 1px solid #6CB4DA;
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    .recommendation-line img {
+        border-radius: 24px;
+    }
+
     .swiper-button-next, .swiper-button-prev {
         display: none;
     }
@@ -632,6 +812,7 @@ button.button.xl {
     }
 
     .wrapper-inner.offering {
+        padding-bottom: 20px;
         max-width: 374px;
         width: 100%;
         display: grid;
@@ -738,6 +919,27 @@ button.button.xl {
     .hero-img {
         width: 100%;
         height: 100%;
+    }
+
+    .recommendation-img {
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+@media (max-width: 1340px) {
+
+    .recommendation-text-part, .recommendation-text-part.wide {
+        max-width: 320px;
+    }
+
+}
+
+@media (max-width: 860px) {
+
+    .recommendation-text-part, .recommendation-text-part.wide {
+        max-width: 220px;
     }
 
 }
